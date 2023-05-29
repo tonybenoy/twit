@@ -11,3 +11,4 @@ for tweet in tweets:
     if count == 0: # Use a date logic in loop instead of count
         break
 df = pd.DataFrame(list_tweets)
+df.to_csv('tweets.csv', index=False)
